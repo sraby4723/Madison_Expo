@@ -2,7 +2,10 @@ import scipy
 import numpy as np 
 import librosa 
 from sklearn.metrics import pairwise 
- 
+
+#This code is a possibility for what we could do to compare two audio files.
+#May not work for our use case because it doesn't use the FFTs of the waveforms
+
 def extract_features(file_path): 
     # Load the audio file 
     y, sr = librosa.load(file_path, sr=None) 
